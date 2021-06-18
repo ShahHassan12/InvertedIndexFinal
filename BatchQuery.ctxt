@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=BatchQuery
+comment0.text=\r\n\ This\ class\ will\ parse\ batch\ query\ and\ send\ it\ for\ computation\r\n\r\n\ @author\ Michael\ Scanlon\ &\ Shah\ Hassan\ Syed\r\n
+comment1.params=fileName
+comment1.target=java.util.ArrayList\ parse(java.lang.String)
+comment1.text=\r\n\ This\ method\ will\ parse\ batch\ query\ and\ return\ an\ ArrayList\ of\ each\ term\r\n\r\n
+numComments=2

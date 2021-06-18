@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Normaliser
+comment0.text=\r\n\ This\ is\ the\ normaliser\ method,\ with\ different\ funcionalities\r\n\r\n\ Michael\ Scanlon\ &\ Shah\ Hassan\ Syed\r\n
+comment1.params=word
+comment1.target=boolean\ stopWord(java.lang.String)
+comment1.text=\r\nThis\ method\ returns\ a\ boolean\ for\ whether\ the\ parameter\ word\ \r\nis\ a\ stop\ word\ or\ no\r\n\r\n\ Michael\ Scanlon\ &\ Shah\ Hassan\ Syed\r\n
+numComments=2

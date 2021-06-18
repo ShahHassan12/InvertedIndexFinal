@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=InverterIndex
+comment0.text=\r\n\ The\ Inverter\ Index\ class\ is\ responsible\ for\ making\ the\ document\ index\ to\r\n\ hold\ postingList\ of\ each\ word\ in\ the\ document.\r\n\ This\ index\ does\ not\ support\ stop\ words.\r\n\ \r\n\ parsedDocs\ -\ the\ docs\ read\ from\ one\ file\ of\ the\ corpus\r\n\ index\ -\ the\ index\ that\ will\ hold\ the\ postingLists\ of\ each\ word\r\n\ allDocs\ -\ all\ the\ documents\ read\ from\ the\ entire\ corpus\ will\ be\ parsed\r\n\ \ \ \ \ \ \ \ \ \ \ and\ stored\ here\r\n\ docCount\ -\ the\ total\ number\ of\ documents\ the\ corpus\ holds\r\n
+comment1.params=fileName
+comment1.target=void\ main(java.lang.String)
+comment1.text=\r\n\ The\ main\ method\ to\ provide\ the\ functionality\ of\ parsing\ documents,\ creating\ index\ and\ calculations\r\n\ \r\n\ corpusDir\ -\ the\ directory\ that\ hold\ the\ corpus\ documents\r\n
+comment2.params=
+comment2.target=int\ getCorpusCount()
+comment2.text=\r\n\ This\ method\ will\ return\ the\ number\ of\ document\ the\ corpus\ holds\r\n
+numComments=3

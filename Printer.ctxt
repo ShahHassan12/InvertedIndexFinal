@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Printer
+comment0.text=\r\n\ Printer\ class\ is\ responsible\ for\ printing\ the\ output\ of\ the\ search\r\n\ New\ formats\ can\ be\ plugged\ into\ the\ class.\r\n\r\n\ Michael\ Scanlon\ &\ Shah\ Hassan\ Syed\r\n
+comment1.params=docs\ format\ num\ type
+comment1.target=void\ print(java.util.ArrayList,\ java.lang.String,\ int,\ java.lang.String)
+comment1.text=\r\n\ The\ Print\ class\ will\ print\ the\ results\ to\ the\ console\r\n\ \r\n\ param\ docs\ -\ the\ arrayList\ that\ will\ contain\ all\ the\ documents\ from\ the\ result\r\n\ param\ format\ -\ the\ format\ of\ the\ ouput\ (here\ we\ are\ only\ using\ TREC)\r\n\ param\ type\ -\ the\ type\ of\ model\ to\ be\ used\ in\ the\ search\r\n\ param\ num\ -\ the\ number\ of\ results\ to\ be\ printed\ (the\ number\ is\ ignored\ for\ boolean\ search\ print)\r\n\ param\ qID\ -\ the\ ID\ of\ the\ query\ being\ searched\r\n
+comment2.params=docs\ format\ num\ type\ fileName
+comment2.target=void\ write(java.util.ArrayList,\ java.lang.String,\ int,\ java.lang.String,\ java.lang.String)
+comment2.text=\r\n\ The\ Write\ class\ will\ write\ the\ results\ to\ a\ file,\ overwriting\ previous\ ones\r\n\ \r\n\ param\ docs\ -\ the\ arrayList\ that\ will\ contain\ all\ the\ documents\ from\ the\ result\r\n\ param\ format\ -\ the\ format\ of\ the\ ouput\ (here\ we\ are\ only\ using\ TREC)\r\n\ param\ num\ -\ the\ number\ of\ results\ to\ be\ printed\ (the\ number\ is\ ignored\ for\ boolean\ search\ print)\r\n\ param\ type\ -\ the\ type\ of\ model\ to\ be\ used\ in\ the\ search\r\n\ param\ fileName\ -\ the\ name\ of\ the\ file\ that\ you\ want\ the\ reluts\ to\ be\ appended\r\n\ param\ qID\ -\ the\ ID\ of\ the\ query\ being\ searched\r\n
+comment3.params=docs\ format\ num\ type\ fileName\ qID
+comment3.target=void\ append(java.util.ArrayList,\ java.lang.String,\ int,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment3.text=\r\n\ The\ append\ class\ will\ append\ the\ results\ to\ a\ file\ without\ overwriting\ any\ previous\r\n\ \r\n\ param\ docs\ -\ the\ arrayList\ that\ will\ contain\ all\ the\ documents\ from\ the\ result\r\n\ param\ format\ -\ the\ format\ of\ the\ ouput\ (here\ we\ are\ only\ using\ TREC)\r\n\ param\ num\ -\ the\ number\ of\ results\ to\ be\ printed\ (the\ number\ is\ ignored\ for\ boolean\ search\ print)\r\n\ param\ type\ -\ the\ type\ of\ model\ to\ be\ used\ in\ the\ search\r\n\ param\ fileName\ -\ the\ name\ of\ the\ file\ that\ you\ want\ the\ reluts\ to\ be\ appended\r\n
+numComments=4

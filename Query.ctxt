@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Query
+comment0.text=\r\n\ This\ class\ will\ hold\ the\ query\ if\ it\ is\ coming\ from\ a\ file\r\n
+comment1.params=
+comment1.target=Query()
+comment1.text=\r\n\ Constructor\ of\ Query\ class\ \r\n
+comment2.params=id\ q
+comment2.target=Query(java.lang.String,\ java.lang.String)
+comment2.text=\r\n\ Constructor\ of\ Query\ class\ that\ will\ take\ in\ user\ defined\ parameters\r\n
+comment3.params=id
+comment3.target=void\ setDocID(java.lang.String)
+comment3.text=\r\n\ set\ the\ id\ to\ a\ user\ defined\ ID\ \r\n
+comment4.params=query
+comment4.target=void\ setQuery(java.lang.String)
+comment4.text=\r\n\ set\ the\ query\ to\ a\ user\ defined\ query\r\n
+comment5.params=
+comment5.target=java.lang.String\ getDocID()
+comment5.text=\r\n\ Return\ the\ queryID\ \r\n
+comment6.params=
+comment6.target=java.lang.String\ getQuery()
+comment6.text=\r\n\ Returns\ the\ query\ \r\n
+numComments=7
