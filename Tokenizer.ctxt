@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=Tokenizer
-comment1.params=doc
-comment1.target=java.lang.String[]\ tokenize(Document)
-comment2.params=s
-comment2.target=java.lang.String[]\ phraseTokenize(java.lang.String)
-comment3.params=s
-comment3.target=java.lang.String[]\ booleanTokenize(java.lang.String)
-numComments=4
