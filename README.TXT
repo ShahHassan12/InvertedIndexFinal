@@ -1,4 +1,4 @@
-Authors: Shah Hassan Syed
+Authors: Shah Hassan Syed and Michael Scanlon
 
 To contruct the inverter index, run the IRSystem.java. It requires a single argument,
 which must be a folder that includes all the files to be parsed.
