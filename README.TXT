@@ -3,7 +3,7 @@ Authors: Shah Hassan Syed and Michael Scanlon
 To contruct the inverter index, run the IRSystem.java. It requires a single argument,
 which must be a folder that includes all the files to be parsed.
 
-Typical Construct Time (15 mb) : 6-7 minutes
+Typical Construct Time for thi given Financial Times Folder (15 mb) : 6-7 minutes
 
 Note: As of now the system can only search:
      - multi-word phrases (has to be in qoutation)
