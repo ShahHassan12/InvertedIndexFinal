@@ -3,18 +3,42 @@ import java.io.File;
 import java.util.ArrayList;
 import java.io.FileNotFoundException;
 
+/**
+ * This parser is specifically built to parse Financial Times newspaper corpus
+ * with a standardized formar which contains any number of news articles.
+ * Further on seperates meta data and text body of a news article within the corpus 
+ * and makes a Document object out of each article.
+ *
+ * @author Shah Hassan Syed
+ */
+
 class Parser{
+
+    /**
+     *The main class parse; takes in a single input as a text file
+     *and goes through different checks to seperate the meta data
+     *from the text body of the news article.
+     * 
+     * @param inputFile an input file; a Financial Times corpus that has
+     * multiple newswire articles
+     * @return an arraylist of document objects;
+     */
     public static ArrayList<Document> parse(File inputFile) {
+
+        //initialize an arraylist of type Document
         ArrayList<Document> docList = new ArrayList<Document>();
         
+        //only proceed if the input is a valid text file
         try {
              int count=0;
             Scanner sc = new Scanner(inputFile);
             while (sc.hasNext()) {
                
+                //create a document object for each article
                 Document parsedDoc = new Document();
                 String currLine = sc.nextLine();
 
+                //use conditionals to check what type of meta data is being dealt with
                 if (currLine.equals("<DOC>")) {
                     currLine = sc.nextLine();
                     if (currLine.substring(0, 7).equals("<DOCNO>")) {                    
@@ -84,6 +108,7 @@ class Parser{
                         parsedDoc.setDateLine(dateLine);
                     }
 
+                    //after storing all the meta data, check for the text body of the article
                     if (currLine.equals("<TEXT>")) {
                         currLine = sc.nextLine();
                         String text = "";
@@ -98,7 +123,9 @@ class Parser{
                     
                     currLine = sc.nextLine();
                     boolean pubFound = false;
-
+                    
+                    //Check if there is more meta data after the text body.
+                    //This depends upon case by case basis
                     while(pubFound==false){
                         if(currLine.equals("<XX>")){
                             currLine = sc.nextLine();
@@ -169,6 +196,7 @@ class Parser{
                         sc.nextLine();
                     }
 
+                    //once everything is set, add the Document to the arraylist
                     docList.add(parsedDoc);
                 }
                 
@@ -178,9 +206,12 @@ class Parser{
             sc.close();
         } 
 
+        //Throw an exception if the text file not found
         catch (FileNotFoundException e) {
             System.out.println("File not Found!");
         }
+
+        //return the arraylist of Documents
         return docList;
     }
 }
