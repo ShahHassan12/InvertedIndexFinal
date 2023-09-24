@@ -3,9 +3,10 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
 /**
- * A document object that will be created on the base of the documents retrieved from the corpus
+ * A document object that will be created on the base of the documents retrieved
+ * from the Financial Times corpus
  * 
- * Michael Scanlon & Shah Hassan Syed
+ * @author Shah Hassan Syed
  */
 class Document implements Comparable<Document> {
     //all the meta data of the document
@@ -49,7 +50,7 @@ class Document implements Comparable<Document> {
     }
 
     /**
-     * Set the docID to the userdfined docID
+     * Set the docID to the user defined docID
      */
     public void setDocID(String docID){
         this.docID=docID;
@@ -63,56 +64,56 @@ class Document implements Comparable<Document> {
     }
 
     /**
-     * Set the profile of this document to the userdfined profile
+     * Set the profile of this document to the user defined profile
      */
     public void setProfile(String prof){
         this.profile = prof;
     }
 
     /**
-     * Set the date of this document to the userdfined date
+     * Set the date of this document to the user defined date
      */
     public void setDate(int date){
         this.date = date;
     }
 
     /**
-     * Set the headLine of this document to the userdfined headLine
+     * Set the headLine of this document to the user defined headLine
      */
     public void setHeadLine(String hd){
         this.headLine = hd;
     } 
 
     /**
-     * Set the byLine of this document to the userdfined byLine
+     * Set the byLine of this document to the user defined byLine
      */
     public void setByLine(String bl){
         this.byLine = bl;
     }
 
     /**
-     * Set the dateLine of this document to the userdfined dateLine
+     * Set the dateLine of this document to the user defined dateLine
      */
     public void setDateLine(String dl){
         this.dateLine = dl;   
     }
 
     /**
-     * Set the text of this document to the userdfined text
+     * Set the text of this document to the user defined text
      */
     public void setText(String txt){
         this.parsedText=txt;
     }
 
     /**
-     * Set the publisher of this document to the userdfined publisher
+     * Set the publisher of this document to the user defined publisher
      */
     public void setPub(String publisher){
         this.publisher = publisher;
     }
 
     /**
-     * Set the page of this document to the userdfined page
+     * Set the page of this document to the user defined page
      */
     public void setPage(String page){
         this.page = page;
@@ -126,28 +127,28 @@ class Document implements Comparable<Document> {
     }
 
     /**
-     * Set the countries of this document to the userdfined countries
+     * Set the countries of this document to the user defined countries
      */
     public void setCountries(String cn){
         this.countries = cn;
     }
 
     /**
-     * Set the companies of this document to the userdfined companies
+     * Set the companies of this document to the user defined companies
      */
     public void setCompanies(String co){
         this.companies = co;
     }
 
     /**
-     * Set the industries of this document to the userdfined industries
+     * Set the industries of this document to the user defined industries
      */
     public void setIndustries(String in){
         this.industries = in;
     }
 
     /**
-     * Set the types of this document to the userdfined types
+     * Set the types of this document to the user defined types
      */
     public void setTypes(String tp){
         this.types = tp;
@@ -205,6 +206,9 @@ class Document implements Comparable<Document> {
         return this.L2Norm;   
     }
 
+    /**
+     * Method to caluclate the Cosine Similarity Score of the document
+     */
     public void calculateCosSim(HashMap<String, Posting> hm, String term){
          double cosSimi = 0.0;       
 

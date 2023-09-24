@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 /**
  * This class will parse batch query and send it for computation
  *
- * @author Michael Scanlon & Shah Hassan Syed
+ * @author Shah Hassan Syed
  */
 public class BatchQuery
 {

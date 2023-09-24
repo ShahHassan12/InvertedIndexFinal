@@ -16,6 +16,8 @@ import java.util.Arrays;
  * allDocs - all the documents read from the entire corpus will be parsed
  *           and stored here
  * docCount - the total number of documents the corpus holds
+ * 
+ * @author - Shah Hassan Syed
  */
 class InverterIndexSW {
     static ArrayList<Document> parsedDoc = new ArrayList<Document>();

@@ -6,7 +6,7 @@ import java.util.Arrays;
 /**
  * This is the normaliser method, with different funcionalities
  *
- * Michael Scanlon & Shah Hassan Syed
+ * @author Shah Hassan Syed
  */
 class Normaliser{
 

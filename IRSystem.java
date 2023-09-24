@@ -7,7 +7,7 @@ import java.util.Arrays;
 /**
  * The main runner of the Information Retrieval Systems
  *
- * @author Michael Scanlon & Shah Hassan Syed
+ * @author Shah Hassan Syed
  */
 public class IRSystem
 {
