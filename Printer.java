@@ -7,7 +7,7 @@ import java.io.IOException;
  * Printer class is responsible for printing the output of the search
  * New formats can be plugged into the class.
  *
- * Michael Scanlon & Shah Hassan Syed
+ * @author Shah Hassan Syed
  */
 public class Printer
 {

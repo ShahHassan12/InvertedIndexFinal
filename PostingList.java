@@ -6,7 +6,7 @@ import java.util.LinkedList;
  * This is a postingList class that will be used to hold a the postings of a word
  * through out all the document
  *
- * Michael Scanlon & Shah Hassan Syed
+ * @author Shah Hassan Syed
  */
 class PostingList{
     //the actual word for which the postingList exists

@@ -11,7 +11,7 @@ import java.util.LinkedList;
  * The query class; reads in the query from the user and decides how to parse and
  * which function to further call
  *
- * Michael Scanlon & Shah Hassan Syed
+ * @author Shah Hassan Syed
  */
 class QuerySearch{
     //a hashmap to hold all the terms in the query for computation
