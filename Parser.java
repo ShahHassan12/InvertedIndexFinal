@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
  * and makes a Document object out of each article.
  *
  * @author Shah Hassan Syed
+ * @version 2021
  */
 
 class Parser{
@@ -30,7 +31,6 @@ class Parser{
         
         //only proceed if the input is a valid text file
         try {
-             int count=0;
             Scanner sc = new Scanner(inputFile);
             while (sc.hasNext()) {
                
@@ -57,14 +57,12 @@ class Parser{
                     currLine = sc.nextLine();
                     if (currLine.substring(0, 9).equals("<PROFILE>")) {
                         parsedDoc.setProfile(currLine.substring(9, 23));
-                        String v2 =  currLine.substring(9,23);
                     }
 
                     currLine = sc.nextLine();
                     if (currLine.substring(0, 6).equals("<DATE>")) {
                         int date = Integer.parseInt(currLine.substring(6, 12));
                         parsedDoc.setDate(date);
-                        String v3 = currLine.substring(6,12);
                     }
                     sc.nextLine();
                     currLine = sc.nextLine();
@@ -211,7 +209,7 @@ class Parser{
             System.out.println("File not Found!");
         }
 
-        //return the arraylist of Documents
+        //return the arraylist of Documents once scanner reached the end of the file
         return docList;
     }
 }

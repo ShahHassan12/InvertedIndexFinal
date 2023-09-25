@@ -7,31 +7,38 @@ import java.util.LinkedList;
  * from the Financial Times corpus
  * 
  * @author Shah Hassan Syed
+ * @version 2021
  */
+
 class Document implements Comparable<Document> {
     //all the meta data of the document
-    String profile;
-    String docID;
-    Posting posting;
-    int date;
-    String headLine;
-    String byLine;
-    String dateLine;
-    String publisher;
-    String page;
-    String parsedText;
-    String companies;
-    String countries;
-    String industries;
-    String types;    
+    private String profile;
+    private String docID;
+    private Posting posting;
+    private int date;
+    private String headLine;
+    private String byLine;
+    private String dateLine;
+    private String publisher;
+    private String page;
+    private String parsedText;
+    private String companies;
+    private String countries;
+    private String industries;
+    private String types;    
+
     //ArrayList to hold tokens
     LinkedList<String> txtTokens = new LinkedList<String>();
+
     //the hashmap that will hold all the postings of words in this document along with their vector calculations
     HashMap<String, Posting> docIndex = new HashMap<>();
+
     //the L2 norm of this document
     double L2Norm = 0.0;
+
     //the cosSim of this document according to the query
     double cosSim = 0.0;
+
     /**
      *Construct a document object
      */
@@ -70,6 +77,13 @@ class Document implements Comparable<Document> {
         this.profile = prof;
     }
 
+     /**
+     *Return the profile of this document
+     */
+    public String getProfile(){
+        return this.profile;
+    }
+
     /**
      * Set the date of this document to the user defined date
      */
@@ -103,6 +117,13 @@ class Document implements Comparable<Document> {
      */
     public void setText(String txt){
         this.parsedText=txt;
+    }
+
+     /**
+     * get the text of this document
+     */
+    public String getText(){
+        return this.parsedText;
     }
 
     /**
@@ -154,13 +175,6 @@ class Document implements Comparable<Document> {
         this.types = tp;
     }
 
-    /**
-     * get the text of this document
-     */
-    public String getText(){
-        return this.parsedText;
-    }
-    
     /**
      * get the tokens of the terms in this document
      */ 
