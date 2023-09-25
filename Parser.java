@@ -5,18 +5,22 @@ import java.io.FileNotFoundException;
 
 /**
  * This parser is specifically built to parse Financial Times newspaper corpus
- * with a standardized formar which contains any number of news articles.
+ * with a standardized format which contains any number of news articles.
  * Further on seperates meta data and text body of a news article within the corpus 
  * and makes a Document object out of each article.
  *
  * @author Shah Hassan Syed
  * @version 2021
  */
-
 class Parser{
 
+    public static void main(String fileName){
+    File input = new File(fileName);
+    parse(input);
+    }
+
     /**
-     *The main class parse; takes in a single input as a text file
+     *Takes in a single input as a text file
      *and goes through different checks to seperate the meta data
      *from the text body of the news article.
      * 
@@ -189,6 +193,8 @@ class Parser{
                         currLine = sc.nextLine();
                         parsedDoc.setPage(currLine);
                     }
+
+                    //skip the blank lines at the end of each article
                     if (sc.hasNext()) {
                         sc.nextLine();
                         sc.nextLine();
