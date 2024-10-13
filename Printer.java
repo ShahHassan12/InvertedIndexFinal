@@ -12,7 +12,7 @@ import java.io.IOException;
 public class Printer
 {
     //team name can be plugged in and changed
-    private static String teamName = "MikeScanlon&ShahHassanSyed";
+    private static String teamName = "ShahHassanSyed";
 
     /**
      * The Print class will print the results to the console
