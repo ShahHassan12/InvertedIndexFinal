@@ -1,6 +1,6 @@
 Authors: Shah Hassan Syed
 
-To contruct the inverter index, run the IRSystem.java. It requires a single argument,
+To contruct the inverted index, run the IRSystem.java. It requires a single argument,
 which must be a folder that includes all the files to be parsed.
 
 Typical Construct Time for the given Financial Times Folder (15 mb) : 6-7 minutes
