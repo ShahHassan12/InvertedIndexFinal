@@ -52,6 +52,6 @@ in a single run), depending upon your machines allocated heap space to JVM
 
 If the system throws such exception, one solution is to increase your default heap.
 Else if the system does not throw exception in one index conruction, it might in the second, becuase
-the heap is not cleared. A solution to this is exiting your jvm or IDE before constructing again.
+the heap is not cleared. Another solution to this is exiting your jvm or IDE before constructing again.
 
       
