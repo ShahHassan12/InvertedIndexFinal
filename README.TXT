@@ -31,7 +31,7 @@ ________________________________________
 INITIALIZED INDEX INCLUDING STOP WORDS 
 ________________________________________
 
-Once both invertex indexes are initialized, user will be prompted to type in
+Once both inverted indexes are initialized, user will be prompted to type in
 the type of query whether it is batch query search or single query search
 
 If user chooses batch, then the user will be prompted to enter the name 
