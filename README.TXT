@@ -10,7 +10,7 @@ Note: As of now the system can only search:
       e.g "to be or not to be"
      - AND boolean operator
      - OR boolean operator
-     - NOT operator operator
+     - NOT boolean operator
      - Single non-phrase word operator	
      - A batch query file
      
